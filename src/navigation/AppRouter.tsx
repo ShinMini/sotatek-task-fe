@@ -26,6 +26,9 @@ import '@ionic/react/css/display.css'
 import '../theme/variables.css'
 import MapDetailPage from '../pages/MapDetailPage'
 
+/* custom css */
+import '../theme/custom.css'
+
 const AppRouter: FC = () => {
 	return (
 		<IonApp>
