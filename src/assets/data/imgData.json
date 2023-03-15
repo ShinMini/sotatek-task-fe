@@ -1,0 +1,165 @@
+{
+	"scenes": [
+		{
+			"id": 0,
+			"background_url": "assets/img/1.jpg",
+			"hitzones": [
+				{
+					"x": "10%",
+					"y": "50%",
+					"goto": 1
+				}
+			]
+		},
+		{
+			"id": 1,
+			"background_url": "assets/img/2.jpg",
+			"hitzones": [
+				{
+					"x": "10%",
+					"y": "50%",
+					"goto": 2
+				}
+			]
+		},
+		{
+			"id": 2,
+			"background_url": "assets/img/3.jpg",
+			"hitzones": [
+				{
+					"x": "10%",
+					"y": "50%",
+					"goto": 3
+				}
+			]
+		},
+		{
+			"id": 3,
+			"background_url": "assets/img/4.jpg",
+			"hitzones": [
+				{
+					"x": "10%",
+					"y": "50%",
+					"goto": 4
+				}
+			]
+		},
+		{
+			"id": 4,
+			"background_url": "assets/img/5.jpg",
+			"hitzones": [
+				{
+					"x": "10%",
+					"y": "50%",
+					"goto": 5
+				}
+			]
+		},
+		{
+			"id": 5,
+			"background_url": "assets/img/6.jpg",
+			"hitzones": [
+				{
+					"x": "10%",
+					"y": "50%",
+					"goto": 4
+				},
+				{
+					"x": "60%",
+					"y": "50%",
+					"goto": 6
+				},
+				{
+					"x": "80%",
+					"y": "50%",
+					"goto": 8
+				}
+			]
+		},
+		{
+			"id": 6,
+			"background_url": "assets/img/7.jpg",
+			"hitzones": [
+				{
+					"x": "10%",
+					"y": "50%",
+					"goto": 5
+				},
+				{
+					"x": "60%",
+					"y": "50%",
+					"goto": 7
+				},
+				{
+					"x": "80%",
+					"y": "50%",
+					"goto": 5
+				}
+			]
+		},
+		{
+			"id": 7,
+			"background_url": "assets/img/house.jpg",
+			"hitzones": [
+				{
+					"x": "50%",
+					"y": "20%",
+					"goto": 6
+				}
+			]
+		},
+		{
+			"id": 8,
+			"background_url": "assets/img/8.jpg",
+			"hitzones": [
+				{
+					"x": "10%",
+					"y": "50%",
+					"goto": 5
+				},
+				{
+					"x": "60%",
+					"y": "50%",
+					"goto": 9
+				},
+				{
+					"x": "80%",
+					"y": "50%",
+					"goto": 10
+				}
+			]
+		},
+		{
+			"id": 9,
+			"background_url": "assets/img/9.jpg",
+			"hitzones": [
+				{
+					"x": "10%",
+					"y": "50%",
+					"goto": 10
+				},
+				{
+					"x": "80%",
+					"y": "50%",
+					"goto": 8
+				}
+			]
+		},
+		{
+			"id": 10,
+			"background_url": "assets/img/10.jpg",
+			"hitzones": [
+				{
+					"x": "10%",
+					"y": "50%",
+					"goto": 8
+				},
+				{
+					"x": "80%",
+					"y": "50%",
+					"goto": 9
+				}
+			]
+		}
+	]
+}

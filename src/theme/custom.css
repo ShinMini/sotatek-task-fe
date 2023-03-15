@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+.sm {
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.8rem;
+	font-weight: 300;
+}
+
+.md {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+.lg {
+	font-family: 'Poppins', sans-serif;
+	font-size: 1.5rem;
+	font-weight: 500;
+}
+
+.thin {
+	font-weight: 300;
+}
+.bold {
+	font-weight: 600;
+}
+.extraBold {
+	font-weight: 800;
+}
+
+.sp-1 {
+	width: 100%;
+	height: 1px;
+}
+
+.sp-2 {
+	width: 100%;
+	height: 10px;
+}
+
+.sp-3 {
+	width: 100%;
+	height: 20px;
+}
+
+.sp-4 {
+	width: 100%;
+	height: 30px;
+}
+
+.gray {
+	color: #9b9b9b;
+}
+
+.black {
+	color: #000000;
+}
+
+.lightGray {
+	color: #f2f2f2;
+}
+
+.darkGray {
+	color: #4f4f4f;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.left-arrow {
+	top: 40%;
+	left: 15px;
+	width: 3rem;
+	height: 3rem;
+
+	color: #313131;
+
+	background-color: #f2f2f2;
+
+	border-radius: 50%;
+
+	z-index: 1;
+}
+
+.right-arrow {
+	top: 40%;
+	right: 15px;
+	width: 3rem;
+	height: 3rem;
+
+	color: #313131;
+
+	background-color: #f2f2f2;
+
+	border-radius: 50%;
+
+	z-index: 1;
+}
+
+.img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
