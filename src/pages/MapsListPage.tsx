@@ -26,6 +26,7 @@ const MapsListPage: React.FC = () => {
 						<IonLabel>Map 2</IonLabel>
 					</IonItem>
 				</IonList>
+				<IonContent className='ion-padding'>Hello World</IonContent>
 			</IonContent>
 		</IonPage>
 	)
