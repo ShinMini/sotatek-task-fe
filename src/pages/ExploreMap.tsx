@@ -8,7 +8,7 @@ const ExploreMap: React.FC<RouteComponentProps> = ({match}) => {
 		<IonPage>
 			<IonRouterOutlet>
 				<Route exact path={match.url} component={MapsListPage} />
-				<Route path={`${match.url}/maps/:id`} component={MapDetailPage} />
+				<Route path={`${match.url}/map/:id`} component={MapDetailPage} />
 				<Route render={() => <Redirect to={match.url} />} />
 			</IonRouterOutlet>
 		</IonPage>
