@@ -1,0 +1,8 @@
+{
+  "name": "sotatekTaskFE",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react",
+  "id": "95d6b301"
+}
