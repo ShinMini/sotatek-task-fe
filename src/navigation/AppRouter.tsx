@@ -24,6 +24,7 @@ import '@ionic/react/css/display.css'
 
 /* Theme variables */
 import '../theme/variables.css'
+import MapDetailPage from '../pages/MapDetailPage'
 
 const AppRouter: FC = () => {
 	return (
@@ -31,9 +32,8 @@ const AppRouter: FC = () => {
 			<IonReactRouter>
 				<IonRouterOutlet>
 					<Route exact path='/explore' component={ExploreMap} />
-					<Route exact path='/'>
-						<Redirect to='/explore' />
-					</Route>
+					<Route exact path='/explore/map/:id' component={MapDetailPage} />
+					<Redirect exact from='/' to='/explore' />
 				</IonRouterOutlet>
 			</IonReactRouter>
 		</IonApp>
