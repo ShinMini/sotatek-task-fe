@@ -68,6 +68,18 @@
 	position: absolute;
 }
 
+.goto-button {
+	width: 3rem;
+	height: 3rem;
+
+	color: #ec0505;
+	background-color: #f2f2f25d;
+
+	border-radius: 50%;
+
+	z-index: 1;
+}
+
 .left-arrow {
 	top: 40%;
 	left: 15px;
