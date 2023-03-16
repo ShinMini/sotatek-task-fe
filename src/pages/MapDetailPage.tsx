@@ -11,7 +11,12 @@ import {
 } from '@ionic/react'
 import {RouteComponentProps} from 'react-router'
 import {IonIcon} from '@ionic/react'
-import {chevronBackOutline, chevronForwardOutline, homeOutline} from 'ionicons/icons'
+import {
+	chevronBackOutline,
+	chevronForwardOutline,
+	homeOutline,
+	addOutline
+} from 'ionicons/icons'
 
 import img1 from '../assets/img/1.jpg'
 import img2 from '../assets/img/2.jpg'
@@ -46,22 +51,38 @@ const imgSet = {
 	img10,
 	house: houseImg
 }
+
+type HitZoneType = {
+	x: string
+	y: string
+	goto: number
+}
+
 const MapDetailPage: React.FC<MapDetailPageProps> = ({match, history}) => {
+	const [imgId, setImgId] = useState(0)
 	const [imgSrc, setImgSrc] = useState(imgSet.img1)
 	const [imgPosition, setImgPosition] = useState(1)
 	const [prevImgPosition, setPrevImgPosition] = useState(imgPosition)
+
+	const [goToButton, setGoToButton] = useState<HitZoneType[]>()
+
 	const imgRef = useRef<HTMLIonImgElement>(null)
 
 	useEffect(() => {
-		const currentImgData = imgDataSet.scenes[Number(match.params.id) - 1]
-
+		const currentImgData = imgDataSet.scenes[imgId]
 		const imgUrl = currentImgData.background_url as keyof typeof imgSet
 		const imgHitzones = currentImgData.hitzones
 
-		console.log(imgHitzones)
+		setGoToButton([])
 
+		imgHitzones.forEach((item, index) => {
+			setGoToButton(prev => {
+				if (prev === undefined) return [item]
+				return [...prev, item]
+			})
+		})
 		setImgSrc(imgSet[imgUrl])
-	}, [match.params.id])
+	}, [imgId])
 
 	useEffect(() => {
 		if (imgPosition === 0) {
@@ -93,7 +114,7 @@ const MapDetailPage: React.FC<MapDetailPageProps> = ({match, history}) => {
 								/>
 							</IonCol>
 							<IonCol>
-								<IonTitle className='lg'>your position is {match.params.id}</IonTitle>
+								<IonTitle className='lg'>made by HyeonMin Shin</IonTitle>
 							</IonCol>
 						</IonRow>
 					</IonGrid>
@@ -116,6 +137,29 @@ const MapDetailPage: React.FC<MapDetailPageProps> = ({match, history}) => {
 					/>
 				)}
 				<IonImg ref={imgRef} className='img' src={imgSrc} />
+
+				{goToButton &&
+					goToButton.map((item, index) => {
+						const getX = Number(item.x.split('%').at(0))
+						const buttonPosition = getX >= 86 ? 'right' : getX <= 32 ? 'left' : 'middle'
+						if (
+							(buttonPosition === 'right' && imgPosition === 2) ||
+							(buttonPosition === 'left' && imgPosition === 0) ||
+							(buttonPosition === 'middle' && imgPosition === 1)
+						)
+							return (
+								<IonIcon
+									key={`goToButton-${index}`}
+									icon={addOutline}
+									className='absolute goto-button'
+									style={{
+										left: item.x,
+										top: item.y
+									}}
+									onClick={() => setImgId(prev => (prev = item.goto))}
+								/>
+							)
+					})}
 			</IonContent>
 		</IonPage>
 	)
