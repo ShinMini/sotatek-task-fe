@@ -103,3 +103,81 @@
 	height: 100%;
 	object-fit: cover;
 }
+
+@keyframes rightToMiddle {
+	from {
+		object-position: 100% 50%;
+	}
+	to {
+		object-position: 50% 50%;
+	}
+}
+
+@keyframes middleToLeft {
+	from {
+		object-position: 50% 50%;
+	}
+	to {
+		object-position: 0% 50%;
+	}
+}
+
+@keyframes leftToMiddle {
+	from {
+		object-position: 0% 50%;
+	}
+	to {
+		object-position: 50% 50%;
+	}
+}
+
+@keyframes middleToRight {
+	from {
+		object-position: 50% 50%;
+	}
+	to {
+		object-position: 100% 50%;
+	}
+}
+
+.img-RightToMiddle {
+	animation: rightToMiddle 1s;
+}
+
+.img-MiddleToLeft {
+	animation: middleToLeft 1s;
+}
+
+.img-LeftToMiddle {
+	animation: leftToMiddle 1s;
+}
+
+.img-MiddleToRight {
+	animation: middleToRight 1s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+	}
+}
+
+.fadeIn {
+	animation: fadeIn 1s;
+}
+
+.fadeOut {
+	animation: fadeOut 1s;
+}
