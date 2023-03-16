@@ -26,6 +26,8 @@
 
 * feat: create component about images & arrow button -> 18:20, 15.03.2023
 
+### Total: about 10 hours
+
 ![day-1](./docs/imgs/day-1.png)
 
 ---
@@ -38,4 +40,16 @@
 
 * feat: create mange json data using state -> 11.20, 16.03.2023
 
+* feat: create feature about explore map -> 12:23, 16.03.2023
+
+### Total: about 2 hours
+
 ![day-2](./docs/imgs/day-2.png)
+
+## DONE
+
+* spent time: about 12 hours
+
+* build by: Ionic framework, React, jest, typescript
+
+* made by: [ShinMini](https://github.com/ShinMini/sotatek-task-fe)
