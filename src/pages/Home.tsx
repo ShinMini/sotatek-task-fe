@@ -4,9 +4,6 @@ import {
 	IonToolbar,
 	IonTitle,
 	IonContent,
-	IonList,
-	IonItem,
-	IonLabel,
 	IonText,
 	IonButton
 } from '@ionic/react'
@@ -35,7 +32,8 @@ const Home: React.FC = () => {
 				</IonText>
 				<div className='sp-2' />
 				<IonButton routerLink='/explore/map/1' className='md'>
-					Explore!
+					{' '}
+					Explore!{' '}
 				</IonButton>
 			</IonContent>
 		</IonPage>

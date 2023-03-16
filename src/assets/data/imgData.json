@@ -2,7 +2,7 @@
 	"scenes": [
 		{
 			"id": 0,
-			"background_url": "assets/img/1.jpg",
+			"background_url": "img1",
 			"hitzones": [
 				{
 					"x": "10%",
@@ -13,7 +13,7 @@
 		},
 		{
 			"id": 1,
-			"background_url": "assets/img/2.jpg",
+			"background_url": "img2",
 			"hitzones": [
 				{
 					"x": "10%",
@@ -24,7 +24,7 @@
 		},
 		{
 			"id": 2,
-			"background_url": "assets/img/3.jpg",
+			"background_url": "img3",
 			"hitzones": [
 				{
 					"x": "10%",
@@ -35,7 +35,7 @@
 		},
 		{
 			"id": 3,
-			"background_url": "assets/img/4.jpg",
+			"background_url": "img4",
 			"hitzones": [
 				{
 					"x": "10%",
@@ -46,7 +46,7 @@
 		},
 		{
 			"id": 4,
-			"background_url": "assets/img/5.jpg",
+			"background_url": "img5",
 			"hitzones": [
 				{
 					"x": "10%",
@@ -57,7 +57,7 @@
 		},
 		{
 			"id": 5,
-			"background_url": "assets/img/6.jpg",
+			"background_url": "img6",
 			"hitzones": [
 				{
 					"x": "10%",
@@ -78,7 +78,7 @@
 		},
 		{
 			"id": 6,
-			"background_url": "assets/img/7.jpg",
+			"background_url": "img7",
 			"hitzones": [
 				{
 					"x": "10%",
@@ -99,7 +99,7 @@
 		},
 		{
 			"id": 7,
-			"background_url": "assets/img/house.jpg",
+			"background_url": "house",
 			"hitzones": [
 				{
 					"x": "50%",
@@ -110,7 +110,7 @@
 		},
 		{
 			"id": 8,
-			"background_url": "assets/img/8.jpg",
+			"background_url": "img8",
 			"hitzones": [
 				{
 					"x": "10%",
@@ -131,7 +131,7 @@
 		},
 		{
 			"id": 9,
-			"background_url": "assets/img/9.jpg",
+			"background_url": "img9",
 			"hitzones": [
 				{
 					"x": "10%",
@@ -147,7 +147,7 @@
 		},
 		{
 			"id": 10,
-			"background_url": "assets/img/10.jpg",
+			"background_url": "img10",
 			"hitzones": [
 				{
 					"x": "10%",
