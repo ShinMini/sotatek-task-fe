@@ -53,3 +53,7 @@
 * build by: Ionic framework, React, jest, typescript
 
 * made by: [ShinMini](https://github.com/ShinMini/sotatek-task-fe)
+
+## Result / YouTube
+
+[YouTube Link](https://youtu.be/NydN3nhuNa4)
