@@ -105,6 +105,6 @@
 
 ## made by: [ShinMini](https://github.com/ShinMini/sotatek-task-fe)
 
-## video clip
+## [video clip](https://youtu.be/NydN3nhuNa4)
 
-[YouTube Link](https://youtu.be/NydN3nhuNa4)
+
